@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0">
+    <title>Cookie Consent Popup</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* .cookie-popup_block.active {
+          display: none;
+        } */
+
+        #cookie-popup {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            opacity: 1.5;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #cookie-popup p {
+            margin: 0;
+        }
+
+        #cookie-popup button {
+            margin-top: 10px;
+            background-color: #3CB596;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: large;
+            cursor: pointer;
+        }
+
+        .cookie-popup_in.active {
+          display: none !important;
+        }
+
+        #cookie-popup button:hover {
+            background-color: #F67702;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cookie-popup" class="cookie-popup_in">
+        <p>
+           Этот сайт использует файлы cookie и другие технологии, чтобы помочь вам в навигации, а также предоставить лучший пользовательский опыт, анализировать использование наших продуктов и услуг, повысить качество наших предложений.
+           Продолжая использовать наш сайт, вы автоматически соглашаетесь с использованием данных технологий.
+        </p>
+        <button class="button cookie_accept btn btn-primary btn-sm close_btn">Я согласен</button>
+    </div>
+
+
+    <script>
+      // let close_btn = document.querySelector('.close_btn');
+      // let cookiepopup = document.querySelector('.cookie-popup_in');
+
+      // close_btn.addEventListener('click', () => {
+      //   cookiepopup.classList.toggle('active');
+      // })
+
+      let close_btn = document.querySelector('.close_btn');
+      let cookiepopup = document.querySelector('.cookie-popup_in');
+
+      // Sahifa yuklanganda localStorage-ni tekshiring
+      if (localStorage.getItem('cookieAccepted')) {
+        cookiepopup.classList.remove('active'); // Cookie popup-ni yashirish
+      } else {
+        cookiepopup.classList.add('active'); // Cookie popup-ni ko'rsatish
+      }
+
+      // Tugmani bosganda localStorage-ga yozish
+      close_btn.addEventListener('click', () => {
+        cookiepopup.classList.remove('active'); // Cookie popup-ni yopish
+        localStorage.setItem('cookieAccepted', 'true'); // Qabul qilinganini saqlash
+      });
+
+    </script>
+</body>
+
+</html>
