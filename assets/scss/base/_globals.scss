@@ -24,7 +24,7 @@ html {
 }
 
 body {
-
+  font-family: $font-Inter;
   font-style: normal;
   font-display: swap;
 }
@@ -52,7 +52,23 @@ address {
 }
 
 .container {
-  max-width: calc(1337px);
+  max-width: calc(1072px);
   margin: 0 auto;
 
+  @include desktop-1100 {
+    padding: 0 20px;
+  }
+}
+
+.main_title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-transform: uppercase;
+  color: $color-dark;
+
+  @include tablet-993 {
+    font-size: 25px;
+    line-height: 27px;
+  }
 }

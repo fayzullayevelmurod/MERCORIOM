@@ -1,6 +1,7 @@
 $desktop-1400: 1400px;
 $desktop-1300: 1300px;
 $desktop-1200: 1200px;
+$desktop-1100: 1100px;
 $desktop-1024: 1024px;
 
 $tablet-993: 993px;
@@ -12,6 +13,16 @@ $mobile-380: 380px;
 
 @mixin desktop-1400 {
   @media (max-width: $desktop-1400) {
+    @content;
+  }
+}
+@mixin desktop-1100 {
+  @media (max-width: $desktop-1100) {
+    @content;
+  }
+}
+@mixin tablet-993 {
+  @media (max-width: $tablet-993) {
     @content;
   }
 }
