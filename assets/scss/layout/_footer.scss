@@ -1,3 +1,21 @@
 .footer {
-  
+  padding: 80px 0;
+  background-color: $color-white;
+
+  @include tablet-993 {
+    padding: 40px 0;
+  }
+
+  ul {
+    li {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21.78px;
+      color: $color-dark;
+
+      @include tablet-993 {
+        font-size: 16px;
+      }
+    }
+  }
 }

@@ -1,0 +1,105 @@
+.contact {
+  background: linear-gradient(90deg, #596B7B 0.94%, #3E3C2D 55.42%, #697B89 89.1%);
+  padding: 26px 0 48px 0;
+
+  .main_title {
+    color: $color-white;
+    margin-bottom: 35px;
+
+    @include mobile-576 {
+      margin-bottom: 20px;
+    }
+  }
+
+  &_in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    @include tablet-993 {
+      flex-direction: column;
+    }
+  }
+
+  &_left {
+    max-width: 451px;
+
+    @include tablet-993 {
+      text-align: center;
+    }
+
+  }
+
+  &_right {
+    border-radius: 30px;
+    border: 1px solid #D9D9D9;
+    padding: 45px 80px 30px 80px;
+    width: 511px;
+
+    @include mobile-576 {
+      width: 100%;
+      padding: 30px;
+      border-radius: 24px;
+    }
+  }
+
+  ul {
+    li {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21.78px;
+      color: $color-white;
+
+      @include mobile-576 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    input {
+      width: 100%;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 21.78px;
+      color: $color-white;
+      padding-bottom: 10px;
+      border-bottom: 2px solid $color-white;
+
+      &::placeholder {
+        color: $color-white;
+      }
+
+      @include mobile-576 {
+        font-size: 16px;
+        line-height: 17px;
+        border-bottom: 1px solid $color-white;
+      }
+    }
+
+    button {
+      margin-top: 15px;
+      background-color: #BB986F;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 21.78px;
+      color: $color-dark;
+      height: 68px;
+      width: 297px;
+
+      @include mobile-576 {
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+        border-radius: 24px;
+      }
+    }
+  }
+}

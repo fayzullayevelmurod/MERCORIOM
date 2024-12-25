@@ -16,13 +16,21 @@ $mobile-380: 380px;
     @content;
   }
 }
+
 @mixin desktop-1100 {
   @media (max-width: $desktop-1100) {
     @content;
   }
 }
+
 @mixin tablet-993 {
   @media (max-width: $tablet-993) {
+    @content;
+  }
+}
+
+@mixin mobile-576 {
+  @media (max-width: $mobile-576) {
     @content;
   }
 }
