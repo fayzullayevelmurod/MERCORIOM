@@ -597,6 +597,57 @@ address {
   }
 }
 
+.about {
+  margin-top: 105px;
+}
+@media (max-width: 993px) {
+  .about {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 993px) {
+  .about .main_title {
+    text-align: center;
+  }
+}
+.about .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.78px;
+  color: #1B2E3F;
+  text-transform: uppercase;
+}
+@media (max-width: 993px) {
+  .about p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+.about li {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.78px;
+  color: #1B2E3F;
+  list-style-type: disc;
+}
+@media (max-width: 993px) {
+  .about li {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+.about li:last-child {
+  list-style-type: none;
+}
+.about li b {
+  font-weight: 700;
+}
+
 .footer {
   padding: 80px 0;
   background-color: #FFFFFF;

@@ -1,0 +1,53 @@
+.about {
+  margin-top: 105px;
+
+  @include tablet-993 {
+    margin-top: 40px;
+  }
+
+  .main_title {
+    @include tablet-993 {
+      text-align: center;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.78px;
+    color: $color-dark;
+    text-transform: uppercase;
+
+    @include tablet-993 {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  li {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    color: $color-dark;
+    list-style-type: disc;
+
+    @include tablet-993 {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    &:last-child {
+      list-style-type: none;
+    }
+
+    b {
+      font-weight: 700;
+    }
+  }
+}
