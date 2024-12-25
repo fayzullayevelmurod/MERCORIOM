@@ -1,0 +1,49 @@
+.process {
+  margin-bottom: 100px;
+
+  @include tablet-993 {
+    margin-bottom: 40px;
+  }
+
+  .main_title {
+    color: #1B2E3F;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36.31px;
+
+    @include tablet-993 {
+      margin-bottom: 20px;
+      font-size: 25px;
+      line-height: 27px;
+    }
+  }
+
+  &_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include tablet-993 {
+      gap: 10px;
+    }
+
+    span {
+      width: 100%;
+      border-radius: 30px;
+      border: 2px solid #1B2E3F;
+      padding: 30px 40px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19.36px;
+      color: black;
+      text-transform: uppercase;
+
+      @include tablet-993 {
+        border-radius: 24px;
+        padding: 15px 20px;
+      }
+    }
+  }
+}
