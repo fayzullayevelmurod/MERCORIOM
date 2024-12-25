@@ -80,3 +80,68 @@
     }
   }
 }
+
+.services_section {
+  margin: 34px 0 59px 0;
+
+  @include tablet-993 {
+    margin: 40px 0;
+  }
+
+  button {
+    border: 2px solid #1B2E3F;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    width: 285px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.78px;
+    color: #1B2E3F;
+    text-transform: uppercase;
+
+    @include tablet-993 {
+      width: 250px;
+      height: 40px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  h6 {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.78px;
+    color: #1B2E3F;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    @include tablet-993 {
+      margin-bottom: 10px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  ul {
+    padding-left: 15px;
+
+    li {
+      list-style-type: disc;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 21.78px;
+      color: #1B2E3F;
+      text-transform: uppercase;
+
+      @include tablet-993 {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}
